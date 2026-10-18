@@ -152,12 +152,14 @@ button.primary { background: #e5edf8; border-color: #8da9ce; }
         <span id="pcLabel">PC: -</span>
       </div>
 
-      <textarea id="source" spellcheck="false"># 8 - 3 を計算して表示する
-push 8
-push 3
-sub
-print
-halt</textarea>
+      <textarea id="source" spellcheck="false">#100から0へのカウントダウン
+push 0
+push 100
+start:
+    print
+    dec
+    goto start when le
+clear</textarea>
 
       <div class="toolbar">
         <button class="primary" id="runBtn">実行</button>
